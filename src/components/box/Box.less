@@ -1,0 +1,82 @@
+.box{
+    position: absolute;
+    box-sizing: border-box;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        border: 1px dashed rgba(0,0,0,.15);
+        visibility: hidden;
+    }
+    &:hover{
+        &::after{
+            visibility: visible;
+        }
+    }
+    
+    .box-sash{
+        position: absolute;
+        z-index: 1;
+        &.top{
+            width: 100%;
+            height: 4px;
+            left: 0;
+            top: -2px;
+            cursor: row-resize;
+        }
+        &.right{
+            width: 4px;
+            height: 100%;
+            right: -2px;
+            top: 0;
+            cursor: col-resize;
+        }
+        &.bottom{
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: -2px;
+            cursor: row-resize;
+        }
+        &.left{
+            width: 4px;
+            height: 100%;
+            left: -2px;
+            top: 0;
+            cursor: col-resize;
+        }
+    }
+    .box-knob{
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        background: #666;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+        z-index: 2;
+        &.tl{
+            top: -2px;
+            left: -2px;
+            cursor: nwse-resize;
+        }
+        &.tr{
+            top: -2px;
+            right: -2px;
+            cursor: nesw-resize;
+        }
+        &.bl{
+            bottom: -2px;
+            left: -2px;
+            cursor: nesw-resize;
+        }
+        &.br{
+            bottom: -2px;
+            right: -2px;
+            cursor: nwse-resize;
+        }
+    }
+}
