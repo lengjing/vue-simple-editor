@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>vue-simple-editor</title><style type=text/css>/* roboto-100 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('//lib.baomitu.com/fonts/roboto/roboto-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/roboto/roboto-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/roboto/roboto-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-100.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/roboto/roboto-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+  
+/* roboto-300 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//lib.baomitu.com/fonts/roboto/roboto-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/roboto/roboto-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/roboto/roboto-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-300.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/roboto/roboto-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+  
+/* roboto-regular */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: regular;
+  src: url('//lib.baomitu.com/fonts/roboto/roboto-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/roboto/roboto-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/roboto/roboto-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-regular.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/roboto/roboto-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+  
+/* roboto-500 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('//lib.baomitu.com/fonts/roboto/roboto-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/roboto/roboto-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/roboto/roboto-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-500.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/roboto/roboto-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+  
+/* roboto-700 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//lib.baomitu.com/fonts/roboto/roboto-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/roboto/roboto-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/roboto/roboto-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-700.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/roboto/roboto-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+  
+/* roboto-900 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('//lib.baomitu.com/fonts/roboto/roboto-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Normal'),
+       url('//lib.baomitu.com/fonts/roboto/roboto-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//lib.baomitu.com/fonts/roboto/roboto-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-900.woff') format('woff'), /* Modern Browsers */
+       url('//lib.baomitu.com/fonts/roboto/roboto-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('//lib.baomitu.com/fonts/roboto/roboto-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}</style><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css><link href=/css/chunk-41f89df0.6beb0ff0.css rel=prefetch><link href=/js/chunk-41f89df0.fb23c19c.js rel=prefetch><link href=/css/app.ecd9eb53.css rel=preload as=style><link href=/css/chunk-vendors.588aab3c.css rel=preload as=style><link href=/js/app.540d6704.js rel=preload as=script><link href=/js/chunk-vendors.e7062f02.js rel=preload as=script><link href=/css/chunk-vendors.588aab3c.css rel=stylesheet><link href=/css/app.ecd9eb53.css rel=stylesheet></head><body><noscript><strong>We're sorry but vue-simple-editor doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.e7062f02.js></script><script src=/js/app.540d6704.js></script></body></html>
