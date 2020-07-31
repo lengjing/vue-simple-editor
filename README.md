@@ -1,4 +1,4 @@
-# read-marketing-fe
+# vue-simple-editor
 
 ## Project setup
 ```
