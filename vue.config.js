@@ -3,4 +3,5 @@ module.exports = {
   transpileDependencies: [
     'vuetify',
   ],
+  publicPath: '/vue-simple-editor/',
 };
